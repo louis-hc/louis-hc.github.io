@@ -1,0 +1,97 @@
+/* iOS风格毛玻璃效果 - 内容区域 */
+
+/* 页面背景铺满 */
+body {
+  background: url(/img/Charlotte.jpg) no-repeat center fixed !important;
+  background-size: cover !important;
+}
+
+/* 主内容区域 - iOS毛玻璃 */
+.layout,
+#content-inner {
+  background: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+/* 文章卡片 */
+.recent-post-item {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  margin-bottom: 12px !important;
+}
+
+/* 侧边栏卡片 - iOS毛玻璃 */
+.card-widget {
+  background: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+/* 分类/标签/归档页面 */
+.category-lists,
+.tag-cloud,
+#archive {
+  background: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-radius: 16px !important;
+  padding: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+/* 文章标题颜色 - 深色提高可读性 */
+.post-title a {
+  color: #1a1a1a !important;
+}
+
+/* 文章内容文字 */
+.content,
+.post-content,
+#post,
+article {
+  color: #333 !important;
+}
+
+/* 文章元信息 */
+.post-meta,
+.post-meta a {
+  color: #666 !important;
+}
+
+/* ===== 修复三部分之间的白色缝隙 ===== */
+
+/* 消除banner和内容区之间的白线 */
+#page-header {
+  margin-bottom: 0 !important;
+}
+
+.full_page + #content-inner,
+#page-header + .layout {
+  margin-top: -1px !important;
+  padding-top: 20px !important;
+}
+
+/* 消除内容区和页脚之间的白线 */
+#content-inner {
+  margin-bottom: 0 !important;
+  padding-bottom: 20px !important;
+}
+
+#footer {
+  margin-top: -1px !important;
+  padding-top: 20px !important;
+}
+
+/* 外层容器背景透出 */
+#body-wrap,
+.page {
+  background: transparent !important;
+}
